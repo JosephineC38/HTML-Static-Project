@@ -2,3 +2,14 @@ html {
   height: 100%;
   width: 100%;
 }
+
+table {
+  border-collapse: collapse;
+}
+td,
+  
+th {
+  border: 3px solid blue;
+  padding: 5px 10px;
+  text-align: center; 
+}
