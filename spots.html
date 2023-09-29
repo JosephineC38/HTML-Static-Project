@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width">
   <title>Spots</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="script.js"></script>
 </head>
 
 <body>
@@ -12,7 +13,9 @@
   
   <h1>Spots to Visit in NYC</h1>
     <p> There are many places to visit and 
-    explore in the city. </p>
+    explore in the city. There are many places that you shouldn't 
+    visit. 
+    </p>
     </br>
     
 <section>
@@ -26,17 +29,33 @@
     height= "200" /> </img>
   </figure>
   
-    <p> L'Milkly in Flushing. <a href = 
-    "https://www.imilkyusa.com/imilky-drinks"> Website. </a> 
-     I like their milk tea and I tried two separte locations.
+    <p> I tried several different bubble tea and the one I liked the 
+     most was <a href = "https://www.imilkyusa.com/imilky-drinks"> 
+     L'Milkly. </a> I went to its Flushing location and I was in love
+     with its classic drink. I also went to its Chinatown location and
+     it tasted roughly the same. I like that consistency because some
+     other chains have completely different tastes depending on which
+     store I go to. I haven't tried the other teas they have, I should      one day.     
     </p> 
     </br>
 </section>
   
 <section> 
   <h2>Not So Great Spots</h2>
-  <p> The LIRR, I don't like waiting for the train. </p>
+  <p> I don't hate the LIRR, I just hate waiting for the 
+   train. It used to fit perfectly with my schedule but now, I have to 
+   wait longer.  
+  </p>
   
+  <figure>
+        <img src = 
+        "https://i.ytimg.com/vi/_jGxYHAcD24/maxresdefault.jpg"
+        alt = "LIRR at Atalntic Terminal"
+        width= "500"
+        height= "300" /> </img>
+  </figure>
+</section>
+
   <table>
      <caption>
     The Pros and Cons of Train Times
@@ -52,7 +71,8 @@
     
   <tr>
     <th> Pros </th>
-      <td> I can walk and talk with my friend. </td>
+      <td> I can walk and talk with my friend. I don't have to worry 
+      about missing the train, </td>
       <td> Conveinet when I end 10th and I don't have to wait
       an hour anymore. </td>
       <td> Nice for when I have clubs. </td>
@@ -65,30 +85,50 @@
       <td> I can't do homework in one session, I have to get
       up to change trains. </td>
       <td> I don't end 10th anymore and have to wait 20 mintutes
-      for the next train. </td>
+      for the connecting train. </td>
       <td> I have to rush to get there and 
         sometimes I miss it. </td>
-      <td> But sometimes I still have to run or risk waiting 
+      <td> Sometimes I still have to run or risk waiting 
      another 30 mintutes. </td>
   </tr>
 </table>
 
-  <figure>
-        <img src = 
-        "https://i.ytimg.com/vi/_jGxYHAcD24/maxresdefault.jpg"
-        alt = "LIRR at Atalntic Terminal"
-        width= "300"
-        height= "100" /> </img>
-  </figure>
-</section>
+</br>
+    <p>
+    Thank you for reading my website, please answer below your thoughts on it.
+    </p>
 
-  <p>
-    Thank you for reading my website, please check this box if you liked it.
-  </p>
+<form>
+  <fieldset>
+  <input type = "radio" id = "love" 
+  name = "websiteOpinion" value = "love">
+  <label for = "love"> I loved it </label> <br>
   
-  <input type="checkbox" id="likeQuestion" name="liked" value="no" />
+  <input type = "radio" id = "like" 
+  name = "websiteOpinion" value = "like">
+  <label for= "like"> I liked it </label> <br>
+  
+  <input type =  "radio" id = "netural" name = "websiteOpinion" 
+  value= "netural">
+  <label for= "netural"> I am netural about it </label> <br>
 
-  
+  <input type = "radio" id = "dislike" name = "websiteOpinion" 
+  value = "dislike">
+  <label for= "dislike"> I disliked it
+  </label> <br>
+
+  <input type = "radio" id = "hate" name = "websiteOpinion" 
+  value = "hate">
+  <label for = "hate"> I hated it </label> <br>
+
+  <input type = "button" value= "Submit" onclick = "thanks()"> 
+  </fieldset>
+</form>
+
+<p id = "thank">  </p>
+
+</br> </br>
+
 <div>
   <a href="index.html"> Back to Home</a>
 
